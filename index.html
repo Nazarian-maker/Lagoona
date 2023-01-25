@@ -513,7 +513,45 @@
             </div>
         </section>
         <section id="blog" class="blog section-offset">
-
+            <div class="container blog-bg">
+                <h2 class="section-title ">Хочу тур</h2>
+                <div class="forms-bg flex">
+                    <form class="form flex" action="https://jsonplaceholder.typicode.com/posts" method="post">
+                        <fieldset class="fieldset">
+                            <legend class="legend">Город вылета</legend>
+                            <select class="selected" name="Город">
+                                <option class="option" value="Город" selected disabled>Город</option>
+                                <option class="option" value="Санкт-Петербург">Санкт-Петербург</option>
+                                <option class="option" value="Ереван">Ереван</option>
+                                <option class="option" value="Астана">Астана</option>
+                            </select>
+                        </fieldset>
+                        <fieldset class="fieldset">
+                            <legend class="legend">Страна</legend>
+                            <select class="selected" name="Страна">
+                                <option class="option" value="Страна" selected disabled>Страна</option>
+                                <option class="option" value="Россия">Россия</option>
+                                <option class="option" value="Армения">Армения</option>
+                                <option class="option" value="Казахстан">Казахстан</option>
+                            </select>
+                        </fieldset>
+                        <fieldset class="fieldset">
+                            <legend class="legend">Дата прибытия</legend>
+                            <input class="form-input" type="date" name="date">
+                        </fieldset>
+                        <fieldset class="fieldset">
+                            <legend class="legend">Ночей</legend>
+                            <input class="form-input form-border" type="number" min="0" placeholder="0" name="nights">
+                        </fieldset>
+                        <fieldset class="fieldset">
+                            <legend class="legend">Туристы</legend>
+                            <input class="form-input form-border" type="number" min="0" max="10" placeholder="0"
+                                required name="turists">
+                        </fieldset>
+                        <button class="btn btn-reset blog-btn">Найти</button>
+                    </form>
+                </div>
+            </div>
         </section>
         <section id="contacts" class="contacts section-offset">
 
