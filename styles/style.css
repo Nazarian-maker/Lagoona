@@ -534,12 +534,17 @@ body {
     padding: 25px 0 22px;
 }
 
+.contact-item:first-child {
+    padding-top: 0;
+}
+
 .contact-item:not(:last-child) {
     border-bottom: 2px solid #E9E9E9;
 }
 
 .contact-item:last-child {
     padding-top: 45px;
+    padding-bottom: 0;
 }
 
 .contact-link {
