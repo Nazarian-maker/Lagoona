@@ -499,3 +499,63 @@ body {
     height: 42px;
     padding: 13px 30px;
 }
+
+/* contacts */
+
+.contacts-title {
+    padding-left: 65px;
+}
+
+.contact-address {
+    background: #fff;
+    border-radius: 15px;
+    padding: 45px;
+    justify-content: space-between;
+}
+
+.contact-list {
+    width: 375px;
+}
+
+.contact-item-title {
+    margin: 0;
+}
+
+.contact-item-descr {
+    width: 228px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #000000;
+}
+
+.contact-item {
+    justify-content: space-between;
+    padding: 25px 0 22px;
+}
+
+.contact-item:not(:last-child) {
+    border-bottom: 2px solid #E9E9E9;
+}
+
+.contact-item:last-child {
+    padding-top: 45px;
+}
+
+.contact-link {
+    display: block;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+}
+
+.contact-mail-descr {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #999999;
+}
+
+.contact-btn {
+    padding: 27px 30px;
+}
