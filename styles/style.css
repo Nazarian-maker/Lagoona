@@ -564,3 +564,77 @@ body {
 .contact-btn {
     padding: 27px 30px;
 }
+
+/* footer */
+
+.footer {
+    padding-bottom: 30px;
+}
+
+.footer-bg {
+    height: 341px;
+    position: relative;
+    background: #333333;
+    border-radius: 15px;
+    padding: 45px;
+    justify-content: space-between;
+}
+
+.footer-bg-img {
+    position: absolute;
+    background: url(../img/footer-img.svg) no-repeat;
+    width: 254px;
+    height: 228px;
+    bottom: 0;
+    right: 177px;
+}
+
+.footer-left {
+    width: 302px;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer-center {
+    width: 359px;
+}
+
+.footer-descr {
+    margin: 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 190%;
+    color: #FFFFFF;
+}
+
+.center-descr,
+.footer-tel-links {
+    margin-bottom: 15px;
+}
+
+.footer-link {
+    display: block;
+    line-height: 150%;
+}
+
+.footer-social {
+    display: block;
+    width: 25px;
+    height: 25px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-bottom: 20px;
+}
+
+.link-sova {
+    background: url(../img/footer/Group.svg);
+}
+
+.link-ok {
+    background: url(../img/footer/ok.svg);
+}
+
+.link-vk {
+    background: url(../img/footer/Vector.svg);
+}
