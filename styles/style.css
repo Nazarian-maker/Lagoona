@@ -209,18 +209,25 @@ body {
     object-fit: cover;
     padding: 40px 108px 40px 45px;
     flex-direction: column;
+
 }
 
 .image-one {
     background: url(../img/content-one.png) no-repeat center;
+    position: relative;
+    outline: none;
 }
 
 .image-two {
     background: url(../img/content-two.png) no-repeat center;
+    position: relative;
+    outline: none;
 }
 
 .image-three {
     background: url(../img/content-three.png) no-repeat center;
+    position: relative;
+    outline: none;
 }
 
 .vertical-content-item {
@@ -253,6 +260,66 @@ body {
     color: #F0BF5F;
     background: url(../img/Rectangle\ 2.svg) no-repeat;
     background-position: 91px;
+    transition: background-position .5s ease-in-out;
+
+}
+
+.link-outline::after {
+    content: "";
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    bottom: -5px;
+    left: -5px;
+    border: 1px solid #CC9933;
+    outline: none;
+    opacity: 0;
+}
+
+.link-outline:focus::after {
+    opacity: 1;
+}
+
+.link-outline:hover {
+    background-position: 101px;
+}
+
+.link-outline:active {
+    background-position: 91px;
+    color: #fff;
+}
+
+.link-outline:active::after {
+    opacity: 0;
+}
+
+.link-outline-two::after {
+    content: "";
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    bottom: -5px;
+    left: -5px;
+    border: 1px solid #CC9933;
+    outline: none;
+    opacity: 0;
+}
+
+.link-outline-two:focus::after {
+    opacity: 1;
+}
+
+.link-outline-two:hover {
+    background-position: 101px;
+}
+
+.link-outline-two:active {
+    background-position: 91px;
+    color: #fff;
+}
+
+.link-outline-two:active::after {
+    opacity: 0;
 }
 
 .content-item-title-vertical {
@@ -291,6 +358,8 @@ body {
 .services-item {
     width: 573px;
     margin-bottom: 24px;
+    position: relative;
+    outline: none;
 }
 
 .services-item:not(:nth-child(2n)) {
@@ -314,6 +383,37 @@ body {
     line-height: 200%;
     background: url(../img/Rectangle\ 2.svg) no-repeat center right;
     padding-right: 20px;
+    transition: padding-right .5s ease-in-out, color .3s ease-in-out;
+}
+
+.link-outline-three::after {
+    content: "";
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    bottom: -5px;
+    left: -5px;
+    border: 1px solid #CC9933;
+    outline: none;
+    opacity: 0;
+}
+
+.link-outline-three:focus::after {
+    opacity: 1;
+}
+
+.link-outline-three:hover {
+    padding-right: 30px;
+    color: #F0BF5F;
+}
+
+.link-outline-three:active {
+    padding-right: 20px;
+    color: #A47312;
+}
+
+.link-outline-three:active::after {
+    opacity: 0;
 }
 
 .services-item-descr {
@@ -433,6 +533,9 @@ body {
     object-fit: cover;
     justify-content: center;
     align-items: flex-end;
+    position: relative;
+    outline: none;
+    transition: padding-bottom .7s ease-in-out;
 }
 
 .placements-variants-link {
@@ -443,6 +546,21 @@ body {
     background: url(../img/Rectangle-white.svg) no-repeat center right;
     padding-right: 20px;
     margin-bottom: 27px;
+
+}
+
+.placements-variants-link::after {
+    content: "";
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    bottom: -5px;
+    left: -5px;
+    outline: none;
+}
+
+.placement-all-variants:hover {
+    padding-bottom: 176px;
 }
 
 /* blog */
