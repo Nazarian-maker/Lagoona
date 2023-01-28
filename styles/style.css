@@ -114,6 +114,22 @@ body {
     line-height: 16px;
     border-radius: 10px;
     padding: 13px 20px;
+    outline: none;
+    transition: background-color .3s ease-in-out, color .3s ease-in-out;
+}
+
+.btn:focus {
+    background-color: #CC9933;
+    color: #fff;
+}
+
+.btn:hover {
+    background-color: #CC9933;
+    color: #fff;
+}
+
+.btn:active {
+    background-color: #A47312;
 }
 
 .section-offset {
@@ -767,16 +783,21 @@ body {
     margin-bottom: 20px;
 }
 
-.link-sova {
-    background: url(../img/footer/Group.svg);
+.icon_fill {
+    fill: #999999;
+    transition: fill .3s ease-in-out;
 }
 
-.link-ok {
-    background: url(../img/footer/ok.svg);
+.footer-social:focus .icon_fill {
+    fill: #CC9933;
 }
 
-.link-vk {
-    background: url(../img/footer/Vector.svg);
+.footer-social:hover .icon_fill {
+    fill: #CC9933;
+}
+
+.footer-social:active .icon_fill {
+    fill: #A47312;
 }
 
 .link_effect:focus {
