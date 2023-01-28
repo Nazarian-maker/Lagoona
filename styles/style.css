@@ -141,7 +141,24 @@ body {
 .header-personal-account {
     margin-left: auto;
     background: url(../img/keyboard_tab.svg) no-repeat center left;
+    padding: 5px 0;
     padding-left: 30px;
+    transition: color .3s ease-in-out, background .3s ease-in-out;
+}
+
+.header-personal-account:focus {
+    outline: 1px solid #CC9933;
+}
+
+.header-personal-account:hover {
+    color: #F0BF5F;
+    background: url(../img/arrow_gold.svg) no-repeat center left;
+}
+
+.header-personal-account:active {
+    color: #A47312;
+    outline: none;
+    background: url(../img/keyboard_tab.svg) no-repeat center left;
 }
 
 .header-nav-bg {
@@ -169,6 +186,7 @@ body {
 
 .header-link {
     color: #666;
+    padding: 5px;
 }
 
 .btn-container {
@@ -549,6 +567,8 @@ body {
 
 .contact-link {
     display: block;
+    color: #666;
+    width: 152px;
     font-weight: 400;
     font-size: 16px;
     line-height: 150%;
@@ -614,7 +634,9 @@ body {
 
 .footer-link {
     display: block;
+    width: 153px;
     line-height: 150%;
+    color: #666;
 }
 
 .footer-social {
@@ -637,4 +659,37 @@ body {
 
 .link-vk {
     background: url(../img/footer/Vector.svg);
+}
+
+.link_effect:focus {
+    color: #CC9933;
+    outline: 1px solid #CC9933;
+}
+
+.link_effect:hover {
+    color: #CC9933;
+    transition: color .3s ease-in-out;
+}
+
+.link_effect:hover:active {
+    color: #A47312;
+    outline: none;
+}
+
+.link_effect-two {
+    color: #CC9933;
+}
+
+.link_effect-two:focus {
+    outline: 1px solid #CC9933;
+}
+
+.link_effect-two:hover {
+    color: #F0BF5F;
+    transition: color .3s ease-in-out;
+}
+
+.link_effect-two:hover:active {
+    color: #A47312;
+    outline: none;
 }
